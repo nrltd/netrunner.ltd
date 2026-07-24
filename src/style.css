@@ -46,7 +46,6 @@
     display: flex;
     flex: none;
     white-space: nowrap;
-    will-change: transform;
   }
 
   .row-track span {
@@ -86,6 +85,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    isolation: isolate;
     background: rgba(20, 20, 20, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 18px;
